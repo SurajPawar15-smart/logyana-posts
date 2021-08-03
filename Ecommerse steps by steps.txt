@@ -1,0 +1,43 @@
+ng new MyecommerseApp
+
+npm install bootstrap --save
+npm install jquery --save
+
+cd data
+db.json
+
+bootstrap 4: navbar
+
+ng g orders
+cd scr/app/orders
+ng g c list-order
+ng g m products --route products --module app.module
+
+http://localhost:4200/products
+
+https://startbootstrap.com/
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="#">E-commerse</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<h3>Order list</h3>
+<app-list-order></app-list-order>
+<router-outlet></router-outlet>
